@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+@theme {
+    --color-transparent: transparent;
+    --color-current: currentColor;
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    /* Neutral Colors */
+    --color-neutral-bg1-default: #ffffff;
+    --color-neutral-bg1-hover: #f0f0f0;
+    --color-neutral-bg1-focus: #f0f0f0;
+    --color-neutral-bg1-press: #ebebeb;
+
+    --color-neutral-bg2-default: #f0f0f0;
+    --color-neutral-bg2-hover: #e6e6e6;
+    --color-neutral-bg2-focus: #e6e6e6;
+    --color-neutral-bg2-press: #cccccc;
+    --color-neutral-bg2-disable: #f0f0f0;
+    --color-neutral-bg2-selected: #ffffff;
+
+    --color-neutral-fg1-default: #333333;
+    --color-neutral-fg1-hover: #191919;
+    --color-neutral-fg1-focus: #191919;
+    --color-neutral-fg1-press: #000000;
+    --color-neutral-fg1-disable: #cccccc;
+
+    --color-neutral-fg2-default: #7f7f7f;
+    --color-neutral-fg2-hover: #666666;
+    --color-neutral-fg2-focus: #666666;
+    --color-neutral-fg2-press: #4c4c4c;
+    --color-neutral-fg2-disable: #cccccc;
+    --color-neutral-fg2-selected: #009595;
+
+    --color-neutral-fg3-default: #ffffff;
+
+    --color-neutral-st1-default: #7f7f7f;
+    --color-neutral-st1-hover: #666666;
+    --color-neutral-st1-focus: #666666;
+    --color-neutral-st1-press: #4c4c4c;
+    --color-neutral-st1-disable: #cccccc;
+
+    --color-neutral-st2-default: #cccccc;
+    --color-neutral-st2-hover: #b3b3b3;
+    --color-neutral-st2-focus: #b3b3b3;
+    --color-neutral-st2-press: #999999;
+    --color-neutral-st2-disable: #cccccc;
+
+    --color-neutral-st3-default: #e6e6e6;
+    --color-neutral-st3-hover: #cccccc;
+    --color-neutral-st3-focus: #cccccc;
+    --color-neutral-st3-press: #b3b3b3;
+    --color-neutral-st3-disable: #e6e6e6;
+    --color-neutral-st3-selected: #009595;
+
+
+
+    /* Primary Colors */
+    --color-primary-bg1-default: #e0f7f7;
+    --color-primary-bg1-hover: #d6f4f4;
+    --color-primary-bg1-focus: #d6f4f4;
+    --color-primary-bg1-press: #ccf1f1;
+
+    --color-primary-bg2-default: #009595;
+    --color-primary-bg2-hover: #007070;
+    --color-primary-bg2-focus: #007070;
+    --color-primary-bg2-press: #004a4a;
+    --color-primary-bg2-disable: #99e3e3;
+
+    --color-primary-fg1-default: #009595;
+    --color-primary-fg1-hover: #007070;
+    --color-primary-fg1-focus: #007070;
+    --color-primary-fg1-press: #004a4a;
+    --color-primary-fg1-disable: #99e3e3;
+
+
+
+    /* Error Colors */
+    --color-error-bg1-default: #fae4e4;
+    --color-error-bg1-hover: #f9dbdb;
+    --color-error-bg1-focus: #f9dbdb;
+    --color-error-bg1-press: #f7d2d2;
+
+    --color-error-bg2-default: #d61e20;
+    --color-error-bg2-hover: #ab181a;
+    --color-error-bg2-focus: #ab181a;
+    --color-error-bg2-press: #801213;
+    --color-error-bg2-disable: #efa5a6;
+
+    --color-error-fg1-default: #d61e20;
+    --color-error-fg1-hover: #ab181a;
+    --color-error-fg1-focus: #ab181a;
+    --color-error-fg1-press: #801213;
+    --color-error-fg1-disable: #efa5a6;
+
+    --color-error-fg2-default: #ffffff;
+    --color-error-fg2-hover: #ffffff;
+    --color-error-fg2-focus: #ffffff;
+    --color-error-fg2-press: #ffffff;
+    --color-error-fg2-disable: #ffffff;
+
+
+
+    /* Success Colors */
+    --color-success-bg1-default: #e3f6e9;
+    --color-success-bg1-hover: #daf3e2;
+    --color-success-bg1-focus: #daf3e2;
+    --color-success-bg1-press: #d1f0db;
+
+    --color-success-bg2-default: #17b24a;
+    --color-success-bg2-hover: #128e3b;
+    --color-success-bg2-focus: #128e3b;
+    --color-success-bg2-press: #0e6b2c;
+    --color-success-bg2-disable: #a2e0b7;
+
+    --color-success-fg1-default: #17b24a;
+    --color-success-fg1-hover: #128e3b;
+    --color-success-fg1-focus: #128e3b;
+    --color-success-fg1-press: #0e6b2c;
+
+    --color-success-fg2-default: #ffffff;
+    --color-success-fg2-hover: #ffffff;
+    --color-success-fg2-focus: #ffffff;
+    --color-success-fg2-press: #ffffff;
+    --color-success-fg2-disable: #ffffff;
+
+    --color-link-default: #0172B4;
+    --color-link-hover: #015687;
+    --color-link-focus: #00395A;
+    --color-link-disable: #99D2F3;
+
+
+    --color-success-bg1-default: #E3F6E9;
+    --color-success-fg1-default: #17B24A;
+
+    --color-error-bg1-default: #FAE4E4;
+    --color-error-fg1-default: #D61E20;
+
+
+
+    /* Spacing */
+    --spacing-space-00: 0rem;
+    --spacing-space-0\,5: 0.125rem;
+    --spacing-space-01: 0.25rem;
+    --spacing-space-02: 0.5rem;
+    --spacing-space-03: 0.75rem;
+    --spacing-space-04: 1rem;
+    --spacing-space-06: 1.5rem;
+    --spacing-space-08: 2rem;
+    --spacing-space-10: 2.5rem;
+    --spacing-space-12: 3rem;
+    --spacing-space-16: 4rem;
+    --spacing-space-20: 5rem;
+    --spacing-space-24: 6rem;
+
+    
+    
+    /* Radius */
+    --radius-none: 0rem;
+    --radius-xs: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-xxl: 1.25rem;
+    --radius-circular: 62.5rem;
+
+    /* animation */
+    --animate-move-down: move-down 0.3s ease-in-out;
+    @keyframes move-down {
+        0% {
+            transform: translateY(-12px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+/* Text utilities */
+@utility text-title-1 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: -0.8px;
+}
+@utility text-title-2 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+}
+@utility text-title-3 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+}
+@utility text-body-1 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+}
+@utility text-body-2 {
+    font-weight: var(--font-weight-regular);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+}
+@utility text-body-2-strong {
+    font-weight: var(--font-weight-semibold);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+}
+@utility text-caption-1 {
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+}
+@utility text-caption-1-strong {
+    font-weight: var(--font-weight-semibold);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.32px;
+}
+@utility text-caption-2 {
+    font-weight: var(--font-weight-regular);
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+}

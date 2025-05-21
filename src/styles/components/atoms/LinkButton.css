@@ -1,0 +1,15 @@
+.ar-link-button {
+    @apply text-link-default text-body-2-strong transition-all;
+
+    &:hover {
+        @apply !text-link-hover;
+    }
+
+    &:active {
+        @apply !text-link-focus;
+    }
+}
+
+.ar-link-button.disabled {
+    @apply !text-link-disable cursor-default pointer-events-none;
+}

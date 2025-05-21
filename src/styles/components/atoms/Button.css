@@ -1,0 +1,54 @@
+@layer components {
+    .ar-btn {
+        @apply px-4 py-3 rounded-lg leading-none transition-all text-body-2-strong flex justify-center items-center gap-2 h-10 hover:cursor-pointer;
+    }
+
+    .ar-btn-primary {
+      @apply bg-primary-bg2-default text-neutral-fg3-default;
+
+      &:hover {
+        @apply bg-primary-bg2-hover;
+      }
+
+      &:active {
+        @apply bg-primary-bg2-press;
+      }
+
+      &:disabled {
+        @apply bg-primary-bg2-disable;
+      }
+    }
+
+    .ar-btn-secondary {
+        @apply border border-neutral-st2-default text-neutral-fg1-default;
+
+        &:hover {
+            @apply border-neutral-st2-hover text-neutral-fg1-hover;
+        }
+
+        &:active {
+            @apply border-neutral-st2-press text-neutral-fg1-press;
+        }
+
+        &:disabled {
+            @apply border-neutral-st2-disable text-neutral-fg1-disable;
+        }
+    }
+
+    .ar-btn-primary-danger {
+        @apply bg-error-bg2-default text-neutral-fg3-default;
+
+        &:hover {
+            @apply bg-error-bg2-hover;
+        }
+
+        &:active {
+            @apply bg-error-bg2-press;
+        }
+
+        &:disabled {
+            @apply bg-error-bg2-disable;
+        }
+        
+    }
+}

@@ -1,0 +1,28 @@
+@layer components {
+    .ar-pagination {
+        @apply flex items-center justify-between gap-2 border border-neutral-st2-default rounded-md p-1 w-fit;
+    }
+
+    .ar-pagination-button {
+        @apply w-8 h-8 rounded-md flex items-center justify-center text-body-2-strong text-neutral-fg1-default transition-all;
+
+        &:disabled {
+            @apply text-neutral-fg1-disable cursor-not-allowed pointer-events-none;
+        }
+
+        &:active {
+            @apply bg-neutral-bg1-press text-neutral-fg1-press;
+        }
+
+        &:hover {
+            @apply bg-neutral-bg1-hover text-neutral-fg1-hover;
+        }
+    }
+    .ar-pagination-button.active {
+       @apply bg-primary-bg2-default text-neutral-fg3-default pointer-events-none cursor-auto;
+
+       &:disabled {
+        @apply bg-primary-bg2-disable;
+       }
+   }
+}

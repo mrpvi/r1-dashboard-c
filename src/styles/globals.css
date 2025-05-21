@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+@import "./components/atoms/Button.css";
+@import "./components/atoms/Inputs.css";
+@import "./components/atoms/CheckBox.css";
+@import "./components/organisms/Pagination.css";
+@import "./components/atoms/LinkButton.css";
+body {
+  font-family: var(--font-inter);
+}
+
+a {
+  color: var(--color-link-default);
+}

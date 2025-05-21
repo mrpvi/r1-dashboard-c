@@ -1,0 +1,45 @@
+@layer components {
+    .ar-input {
+        @apply w-full rounded-md border p-2 outline-none transition-all text-current text-body-2;
+
+        &.error {
+            @apply !border-error-fg1-default;
+        }
+    }
+
+    .ar-input--sm {
+        @apply h-9;
+    }
+
+    .ar-input--md {
+        @apply h-10;
+    }
+
+    .ar-input--lg {
+        @apply h-12;
+    }
+
+    .ar-input-primary {
+        @apply border-neutral-st2-default text-neutral-fg1-disable;
+
+        &:hover {
+            @apply border-neutral-st2-hover text-neutral-fg1-hover;
+        }
+
+        &:focus {
+            @apply border-primary-fg1-default text-neutral-fg1-default;
+        }
+        
+        &:not(:placeholder-shown):not(:focus) {
+            @apply border-neutral-st2-default text-neutral-fg1-default;
+        }
+
+        &:read-only {
+            @apply border-neutral-st1-default text-neutral-fg1-default;
+        }
+
+        &:disabled {
+            @apply border-neutral-st2-disable text-neutral-fg1-disable;
+        }
+    }
+}
